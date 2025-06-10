@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para Alguém Especial</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      background-color: #f5e9f9; 
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+    }
+
+    .emoji-img {
+      position: absolute;
+      width: 40px;
+      animation: float 14s infinite ease-in;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(100vh); opacity: 0; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-200px); opacity: 0; }
+    }
+
+    .hearts-container {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .message {
+      position: relative;
+      z-index: 1;
+      padding: 100px 20px;
+      text-shadow: 1px 1px 3px black;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .audio-player {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    audio {
+      width: 300px;
+    }
+
+    /* Estilo dos GIFs da Hello Kitty com bordas suavizadas */
+    .hello-kitty-gif {
+      position: absolute;
+      z-index: 2;
+      border-radius: 10px; /* Bordas suavizadas para não ficarem quadradas */
+    }
+
+    .gif1 {
+      top: 20%;
+      left: 10%;
+      width: 180px; /* Aumentando o tamanho */
+    }
+
+    .gif2 {
+      top: 45%; /* Movido um pouco mais para cima */
+      left: 50%;
+      transform: translateX(-50%);
+      width: 300px; /* Aumentando o tamanho */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <div class="message">
+    <h1>Para Alguém Muito Especial</h1>
+    <p>
+      Cada batida do meu coração é como um clique neste site: cheia de intenção, carinho e vontade de te fazer sorrir.
+      Que essa pequena homenagem traga um pouco de luz ao seu dia, assim como você traz ao meu. ❤️
+    </p>
+  </div>
+
+  <div class="audio-player">
+    <audio autoplay loop>
+      <source src="https://cdn.pixabay.com/audio/2023/03/28/audio_7d346f8b7f.mp3" type="audio/mpeg">
+      Seu navegador não suporta áudio HTML5.
+    </audio>
+  </div>
+
+  <!-- Imagens GIF da Hello Kitty em posições aleatórias -->
+  <img src="https://i.pinimg.com/originals/3d/45/4b/3d454b6017296ea2fd9414cadecc5e06.gif" class="hello-kitty-gif gif2" alt="Hello Kitty 2">
+
+  <script>
+    // Criar emojis subindo (corações brancos)
+    const container = document.getElementById('hearts-container');
+    for (let i = 0; i < 12; i++) {
+      const emoji = document.createElement('img');
+      emoji.src = 'https://em-content.zobj.net/thumbs/240/apple/354/white-heart_1f90d.png';
+      emoji.className = 'emoji-img';
+      emoji.style.left = Math.random() * 100 + 'vw';
+      emoji.style.animationDuration = (12 + Math.random() * 4) + 's';
+      container.appendChild(emoji);
+    }
+  </script>
+</body>
+</html>
