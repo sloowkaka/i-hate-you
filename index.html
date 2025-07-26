@@ -12,7 +12,7 @@
       font-family: 'Segoe UI', sans-serif;
       color: white;
       text-align: center;
-      background-color: #f5e9f9; 
+      background-color: #f5e9f9;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -62,8 +62,9 @@
 
     p {
       font-size: 1.5em;
-      max-width: 600px;
+      max-width: 800px;
       margin: auto;
+      white-space: pre-line;
     }
 
     .audio-player {
@@ -81,36 +82,46 @@
       width: 300px;
     }
 
-    /* Estilo dos GIFs da Hello Kitty com bordas suavizadas */
     .hello-kitty-gif {
-      position: absolute;
+      position: fixed;
+      top: 28%;
+      width: 200px;
       z-index: 2;
-      border-radius: 10px; /* Bordas suavizadas para não ficarem quadradas */
+      border-radius: 10px;
     }
 
     .gif1 {
-      top: 20%;
-      left: 10%;
-      width: 180px; /* Aumentando o tamanho */
+      left: -20px;
     }
 
     .gif2 {
-      top: 45%; /* Movido um pouco mais para cima */
-      left: 50%;
-      transform: translateX(-50%);
-      width: 300px; /* Aumentando o tamanho */
+      right: -20px;
     }
-
   </style>
 </head>
 <body>
   <div class="hearts-container" id="hearts-container"></div>
 
   <div class="message">
-    <h1>Para Alguém Muito Especial</h1>
+    <h1>Feliz aniversário nenê</h1>
     <p>
-      Cada batida do meu coração é como um clique neste site: cheia de intenção, carinho e vontade de te fazer sorrir.
-      Que essa pequena homenagem traga um pouco de luz ao seu dia, assim como você traz ao meu. ❤️
+Oii amor, não sou muito bom escrevendo textos mas fodase, só queria falar que desde que te conheci tu alegrou muito os meus dias, principalmente os que eu tava péssimo i vc sabi que eu amo muito você, mesmo vc me odiando né afe, mas enfim, gosto muito da sua amizade, não fazia ideia que depois de ter puxado o assunto mais bosta perguntando se você ia pro ginasio a gente estaria aqui se falando todo dia, eu descobrindo que tu tem o cu preso, você descobrindo que eu so gai aviadado por vc e é iso.
+
+Queria te agradecer por todas as vezes que eu tava mal pra cacete e você me deixou todo felizinho só de conversar comigo ou falar a coisa mais besta do mundo pq você é assim né, toda da idiotinha, mas muito obrigado msm de vdd, as vezes eu acordava mal pra cacete e tu me deixava bem e feliz apenas por vc ser vc sabe.
+
+Fico mt feliz que a gente é próximo assi pq no começo pensava que sla, talvez tu não quisesse ter essa intimidade que tu tem hoje cmg, mas sabi, só foi acontecendo e tu se tornou uma das pessoas mais importantes pra mim, sei que tu deve achar que é mentira e se voce achar fodase problema seu vai se fuder ok.
+
+Mas sério, vc é uma pessoa muito incrivel af, odeio quando tu se rebaixa pq pra mim tu é tipo maravilhosa e não é nem pq eu fico babando seu ovo, é pq tu realmente é ok.
+
+Você fica me julgando pq eu acordo cedo pra falar contigo mas se vc soubesse o tanto que eu fico feliz em acordar e ter um bom dia seu fofinho ou um áudio teu reclamando de alguma coisa vc ia parar di mi julgar ok.
+
+Amo o teu jeitinho de ser meio burrinha idiota e inteligente ao mesmo tempo, as vezes eu não entendo sabe, mas eu real tenho medo de perder tua amizade, afe imagina chegar numa sexta e nao jogar mine cntg a noite ou sla imagina chegar num sabado e nao receber uma mordida sua ou te irritar te tacar areia, todos esses minimos detalhes sao muito importantes pra mim, vc sabe que eu gosto de toque fisico entao qualquer coisinha minina que tu faz cmg, eu ja fico tipo muito boiola af acho que tu ja sabe disso.
+
+Eu lembro quando eu te conheci e ficava falando de ti pros meninos tipo nossa essa menina é muito linda tipo nossa eu casava facil namoraria facil, mas no caso só antes mesmo, e eu lembro q eu comentava com o spinelli tipon a sonho de menina e eu falava tipo sonho mesmo é ficar ca mafer o resto fodase né nao da nem pra comparar com essa deusa pelo amor de deus spinelli kkKKKKKKKKKKK afe eu era bem gay tbm ok.
+
+Mas sério agora, gosto muito de você de vdd, espero que a gente nunca deixe de ser próximo e tenha essa relação, te amo cu nunca vou me esquecer de voce, tu foi uma parte muito importante da minha vida, pra voce pode nao ser, mas pra mim foi uma parte muito importante que eu tenho certeza que vou sempre sorrir quando me lembrar de tudo.
+
+Espero nunca ter que me afastar de você, espero que tu nunca namore tbm pfvr obrigado. Queria escrever mais coisa, mas vai ficar muita muita coisa, eu facilmente contaria de tudo desde que começamos a conversar até hoje, mas acho que não tem necessidade de vc saber de tudo, enfim, te amo nenê, muito mesmo, obg por me tratar tão bem quando quer, brincadeira, te amo.
     </p>
   </div>
 
@@ -121,8 +132,9 @@
     </audio>
   </div>
 
-  <!-- Imagens GIF da Hello Kitty em posições aleatórias -->
-  <img src="https://i.pinimg.com/originals/3d/45/4b/3d454b6017296ea2fd9414cadecc5e06.gif" class="hello-kitty-gif gif2" alt="Hello Kitty 2">
+  <!-- GIFs da Hello Kitty nas laterais -->
+  <img src="https://i.pinimg.com/originals/3d/45/4b/3d454b6017296ea2fd9414cadecc5e06.gif" class="hello-kitty-gif gif1" alt="Hello Kitty Esquerda">
+  <img src="https://i.pinimg.com/originals/3d/45/4b/3d454b6017296ea2fd9414cadecc5e06.gif" class="hello-kitty-gif gif2" alt="Hello Kitty Direita">
 
   <script>
     // Criar emojis subindo (corações brancos)
@@ -138,3 +150,4 @@
   </script>
 </body>
 </html>
+
